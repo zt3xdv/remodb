@@ -91,9 +91,6 @@ db.nested.key = 'updated';
 // Get values
 console.log(db.simple); // 'value'
 console.log(db.nested.key); // 'updated'
-
-// Delete (if implemented)
-delete db.key;
 ```
 
 Changes are automatically synced to the server and persisted.

@@ -1,0 +1,17 @@
+{
+"name": "remotedb",
+"version": "1.0.0",
+"type": "module",
+"main": "index.js",
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+"dependencies": {
+"ws": "^8.0.0",
+  "msgpackr": "^1.10.0"
+},
+"keywords": ["database", "remote", "websocket", "msgpack"],
+"author": "tsumugi_dev",
+"license": "MIT",
+  "description": "A remote database system with automatic sync"
+}

@@ -1,4 +1,4 @@
-# RemoteDB
+# RemoDB
 
 A lightweight, real-time remote database system that syncs data between clients and a server using WebSockets and MessagePack for efficient serialization. Supports nested objects with automatic syncing.
 
@@ -14,7 +14,7 @@ A lightweight, real-time remote database system that syncs data between clients 
 ## Installation
 
 ```bash
-npm install remotedb
+npm install remodb
 ```
 
 ## Quick Start
@@ -22,7 +22,7 @@ npm install remotedb
 ### Server
 
 ```javascript
-import { Server } from 'remotedb';
+import { Server } from 'remodb';
 
 const server = new Server('./data.rdb', { port: 8080 });
 server.on('start', (event) => {
@@ -33,7 +33,7 @@ server.on('start', (event) => {
 ### Client
 
 ```javascript
-import { Client } from 'remotedb';
+import { Client } from 'remodb';
 
 const client = new Client('ws://localhost:8080', serverAuthToken);
 client.on('connect', () => {
@@ -103,7 +103,7 @@ Changes are automatically synced to the server and persisted.
 See `example.js` for a complete example of starting a server and client, and performing nested operations.
 
 ```javascript
-import { Server, Client } from 'remotedb';
+import { Server, Client } from 'remodb';
 
 const server = new Server('./database.rdb', { port: 8080 });
 
